@@ -1,0 +1,13 @@
+body {
+  background-color: grey;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+  padding: 20px;
+  color: black;
+  font-size: 30px;
+}
+img {
+  width: 300px;
+}
