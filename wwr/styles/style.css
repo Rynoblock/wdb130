@@ -1,0 +1,108 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ffe680;
+    color: #004f7c;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 5px solid #ff9800;
+}
+
+/* Navigation */
+nav {
+    background-color: #004f7c;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Featured Photos */
+.feature-photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    max-height: 400px;
+}
+
+.feature-photo img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    border-radius: 50%;
+}
+
+.feature-photo img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #004f7c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Colors inspired by whitewater rafts */
+.accent-yellow {
+    background-color: #ffc107;
+}
+
+.accent-blue {
+    background-color: #0077be;
+}
+
+.accent-red {
+    background-color: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
