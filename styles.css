@@ -1,5 +1,9 @@
 body {
-  background: linear-gradient(135deg, rgba(181, 180, 180, 0.8), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(
+    135deg,
+    rgba(181, 180, 180, 0.8),
+    rgba(255, 255, 255, 0.8)
+  );
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   text-align: center;
@@ -28,10 +32,9 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-
 img {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   border-radius: 10px;
 }
 
@@ -51,4 +54,3 @@ footer {
   width: 100%;
   bottom: 0;
 }
-
