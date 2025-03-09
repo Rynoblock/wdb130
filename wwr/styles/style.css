@@ -1,14 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Protest+Revolution&display=swap");
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
 }
-.home-title {
-}
 header {
   background-color: rgb(140, 114, 81);
-  height: 150px;
   contain: content;
   height: auto;
   margin: 0px;
@@ -20,7 +19,7 @@ header {
   height: auto;
   width: 20%;
 }
-#logo img{
+#logo img {
   width: 125px;
   margin: 20px;
 }
@@ -37,25 +36,37 @@ header {
   text-decoration: none;
   font-size: 28px;
   padding-left: 5%;
+  padding-right: 5%;
+  font-family: "protest revolution", sans-serif;
+  font-weight: 700;
+  transition: color 0.5s;
 }
 #nav a:hover {
   color: rgb(141, 61, 61);
-}
-h4 {
+  transform: scale(1.1);
 }
 #hero {
   background-image: url(../images/hero.png);
   background-repeat: no-repeat;
   background-size: contain;
-aspect-ratio: 3/2;
+  aspect-ratio: 3/2;
   margin: 0px;
   float: left;
-  width:100%;
+  width: 100%;
 }
 #hero-msg {
-  font-family:;
+  font-family: "protest revolution", sans-serif;
   color: rgb(233, 228, 228);
   margin-top: 0px;
+  padding: 10px;
+  width: 100%;
+  float: left;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 20px;
 }
 #hero-msg h1 {
   text-align: center;
@@ -66,7 +77,6 @@ aspect-ratio: 3/2;
 .icon {
   width: 80px;
 }
-
 #hero-img {
   width: 100%;
 }
@@ -74,46 +84,55 @@ aspect-ratio: 3/2;
   text-align: center;
   padding: 10px;
   background-color: white;
-  Margin: auto;
-  width:fit-content;
-  border-radius: 10px;
-
-}
-.button-box :hover{
-  font-weight: 700;
-  width: fit-content
   margin: auto;
+  width: fit-content;
+  border-radius: 10px;
+  font-family: "poiret one", sans-serif;
+  font-weight: 700;
+}
+.button-box:hover {
+  font-weight: 1000;
+  width: fit-content;
+  margin: auto;
+  transform: scale(1.1);
 }
 main section {
   text-align: center;
-}
-#background {
+  font-family: "poiret one", sans-serif;
+  font-weight: 700;
 }
 body {
   background-color: #d6bebe;
   width: 100%;
 }
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card,
+.camping-card,
+.rapids-card {
   width: 30%;
   float: left;
   margin: 1.5%;
+  font-family: "poiret one", sans-serif;
+  font-weight: 800;
 }
-
-.rivers-card .card-img, .camping-card .card-img, .rapids-card .card-img {
+.rivers-card .card-img,
+.camping-card .card-img,
+.rapids-card .card-img {
   width: 85%;
   border-color: rgb(138, 114, 81);
   border-radius: 10px;
   border-style: solid;
   border-width: 10px;
 }
-
 .book {
-
   color: black;
   text-decoration: none;
+  font-family: "poiret one", sans-serif;
+  font-weight: 700;
 }
 .book:hover {
   color: black;
+  font-weight: 1000;
+  transform: scale(1.1);
 }
 .join {
   color: black;
@@ -121,11 +140,13 @@ body {
   background-color: white;
   padding: 10px;
   border-radius: 10px;
-
+  font-family: "poiret one", sans-serif;
+  font-weight: 700;
 }
 .join:hover {
   color: black;
-  font-weight: 700;
+  font-weight: 1000;
+  transform: scale(1.1);
 }
 #mtnsection {
   width: 100%;
@@ -135,11 +156,10 @@ body {
   margin-bottom: 50px;
 }
 #mtns {
-width: 60%;
-position: relative;
-z-index: 1;
+  width: 60%;
+  position: relative;
+  z-index: 1;
 }
-
 img.mountains {
   width: 120%;
   margin-left: 8%;
@@ -157,13 +177,41 @@ img.mountains {
   margin-bottom: 30px;
   text-align: center;
   border-radius: 10px;
-
 }
 .msg h2 {
   color: black;
+  font-family: "poiret one", sans-serif;
+  font-weight: 700;
 }
 .msg p {
   color: black;
+}
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.gallery-item {
+  text-align: center;
+}
+.gallery-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  border-width: 10px;
+  border-color: rgb(138, 114, 81);
+  border-style: solid;
+  transition: transform 0.5s;
+}
+.gallery-item img:hover {
+  border-color: rgb(141, 61, 61);
+  transform: scale(1.1);
+}
+.text-box {
+  margin-top: 10px;
+  font-family: "poiret one", sans-serif;
+  font-weight: 700;
 }
 #footer {
   background-color: rgb(140, 114, 81);
@@ -175,26 +223,32 @@ img.mountains {
 #footer a {
   color: black;
   text-decoration: none;
-  
 }
 #footertext {
   width: 50%;
   float: left;
 }
-#social{
+#social {
   width: 40%;
   float: right;
+  border-radius: 10px;
 }
-#social img{
+#social img {
   float: left;
   margin-right: 5%;
-
+  border-radius: 50px;
+  transition: transform 0.5s;
+}
+#social img:hover {
+  transform: scale(1.2);
 }
 footer a:hover {
   color: black;
 }
 footer p {
   font-size: 1.2em;
+  font-family: "poiret one", sans-serif;
+  font-weight: 700;
 }
 footer p a:hover {
   text-decoration: underline;

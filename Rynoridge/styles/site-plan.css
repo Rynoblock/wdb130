@@ -35,10 +35,12 @@ body {
   font-size: 18px;
   text-align: center;
 }
+
 img {
   display: block;
   margin: 0 auto;
 }
+
 h1,
 h2,
 h3,
@@ -47,21 +49,26 @@ h5,
 h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
+  text-align: center;
 }
+
 h2 {
   text-align: center;
 }
+
 hr {
   height: 3px;
   margin: 35px 0;
   background: var(--accent1-color);
 }
+
 header {
   padding: 1em;
   text-align: center;
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
 }
+
 header > h1,
 header > h2 {
   color: var(--headline-color-on-color);
@@ -71,16 +78,20 @@ p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
   padding: 1em;
+  text-align: center;
 }
+
 .colors {
   width: 100%;
   min-width: 350px;
   margin: 30px auto;
   text-align: center;
 }
+
 .colors th {
   background-color: #999;
 }
+
 .colors td {
   width: 25%;
   height: 3em;
@@ -89,12 +100,15 @@ p {
 .primary {
   background-color: var(--primary-color);
 }
+
 .secondary {
   background-color: var(--secondary-color);
 }
+
 .accent1 {
   background-color: var(--accent1-color);
 }
+
 .accent2 {
   background-color: var(--accent2-color);
 }
@@ -102,6 +116,7 @@ p {
 p.colored {
   background-color: var(--paragraph-background-color);
   color: var(--paragraph-color-on-color);
+  text-align: center;
 }
 
 nav {
@@ -110,20 +125,26 @@ nav {
   text-align: center;
   font-size: 1.2em;
 }
+
 nav {
   list-style-type: none;
   display: flex;
+  justify-content: center;
 }
+
 nav a {
   padding: 1em;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
+  text-align: center;
 }
+
 nav a:link,
 nav a:visited {
   color: var(--nav-link-color);
 }
+
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
@@ -132,6 +153,7 @@ nav a:hover {
 .sitemap {
   display: grid;
   justify-content: center;
+  text-align: center;
 
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
@@ -141,19 +163,23 @@ nav a:hover {
     ". left left right right ."
     "page2 page2 . . page3 page3";
 }
+
 .sitemap > div {
   text-align: center;
 }
+
 .sm-home {
   grid-area: home;
   background-color: #ccc;
   line-height: 3em;
 }
+
 .sm-page2 {
   grid-area: page2;
   background-color: #ccc;
   line-height: 3em;
 }
+
 .sm-page3 {
   grid-area: page3;
   background-color: #ccc;
@@ -175,4 +201,26 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+#logo-image {
+  width: 400px;
+  margin: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#home-image1,
+#home-image2,
+#page2-image1,
+#page2-image2,
+#page3-image1,
+#page3-image2,
+#wireframe-home,
+#wireframe-page2,
+#wireframe-page3 {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
 }
