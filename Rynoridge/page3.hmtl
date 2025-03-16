@@ -14,10 +14,10 @@
           <img class="logo" src="images\Rhino logo.png" alt="Rynoridge Logo" />
         </div>
         <div id="nav">
-          <a href="page2.html">Store</a>
-          <a href="page3.html">Gallery</a>
-          <a href="page4.html">Blog</a>
-          <a href="contactus.html">Contact Us</a>
+          <a href="index.html">Link one</a>
+          <a href="page2.html">Link two</a>
+          <a href="site-plan.html">Link three</a>
+          <a href="contactus.html">Link four</a>
         </div>
       </header>
       <main>

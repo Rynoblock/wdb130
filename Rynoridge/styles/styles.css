@@ -1,0 +1,251 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Rubik+Distressed&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #c0c5c1; /*blue*/
+  --secondary-color: #7d8491; /*yellow*/
+  --accent1-color: #574b60; /*red*/
+  --accent2-color: #eaf0ce; /*White*/
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Rubik Distressed', sans-serif;
+  --paragraph-font: 'Chelsea Market', sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #574b60; /* headlines on a white background */
+  --headline-color-on-color: #eaf0ce; /* headlines on a colored background */
+  --paragraph-color-on-white: #574b60; /* paragraph text on a white background */
+  --paragraph-color-on-color: #eaf0ce; /* paragraph text on a colored background */
+  --paragraph-background-color: #574b60;
+  --nav-link-color: #eaf0ce;
+  --nav-background-color: #7d8491;
+  --nav-hover-link-color: #574b60;
+  --nav-hover-background-color: #7d8491;
+}
+
+body {
+  background-color: var(--primary-color);
+  width: 100%;
+  font-family: var(--paragraph-font);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  background-color: var(--nav-background-color);
+  contain: content;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#logo {
+  display: inline-block;
+  height: auto;
+  width: 20%;
+}
+
+#logo img {
+  width: 200px;
+  margin: 0;
+  display: block;
+}
+
+#nav {
+  display: inline-block;
+  width: 80%;
+  height: 30px;
+  margin-top: 70px;
+}
+
+#nav a {
+  text-align: center;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  font-size: 28px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  transition: color 0.5s;
+}
+
+#nav a:hover {
+  color: var(--nav-hover-link-color);
+  transform: scale(1.1);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero-text {
+  max-width: 800px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  font-family: var(--heading-font);
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin: 20px 0;
+  font-family: var(--paragraph-font);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.store-button,
+.action-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: 700;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.store-button:hover,
+.action-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.features {
+  text-align: center;
+  padding: 20px;
+}
+
+.features h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+  font-family: var(--heading-font);
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.feature-card {
+  text-align: center;
+  width: 30%;
+}
+
+.feature-card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  border-width: 10px;
+  border-color: var(--accent1-color);
+  border-style: solid;
+  transition: transform 0.5s;
+}
+
+.feature-card img:hover {
+  border-color: var(--nav-hover-link-color);
+  transform: scale(1.1);
+}
+
+.feature-card h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 10px 0;
+  font-family: var(--heading-font);
+}
+
+.feature-card p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  font-family: var(--paragraph-font);
+}
+
+.feature-card a {
+  font-size: 1em;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.feature-card a:hover {
+  text-decoration: underline;
+}
+
+#footer {
+  background-color: var(--nav-background-color);
+  color: black;
+  padding: 5%;
+  width: 100%;
+  text-align: center;
+}
+
+#footer a {
+  color: black;
+  text-decoration: none;
+}
+
+#footertext {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#social {
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#social img {
+  margin: 0 5%;
+  border-radius: 50px;
+  transition: transform 0.5s;
+  width: 50px;
+}
+
+#social img:hover {
+  transform: scale(1.2);
+}
+
+footer a:hover {
+  color: black;
+}
+
+footer p {
+  font-size: 1.2em;
+  font-family: var(--paragraph-font);
+  font-weight: 700;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
