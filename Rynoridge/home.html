@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rynoridge Home</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <p>Sign up for our newsletter for 10% off!</p>
   </head>
   <body>
     <div id="content">
       <header>
         <div id="logo">
-          <img class="logo" src="images\Rhino logo.png" alt="Rynoridge Logo" />
+          <img class="logo" src="images/Rhino logo.png" alt="Rynoridge Logo" />
         </div>
         <div id="nav">
           <a href="page2.html">Store</a>
@@ -22,49 +21,44 @@
       </header>
       <main>
         <section class="hero">
+          <img class="hero-background" src="images/Artur-Didyk-shutterstock_1187224183.jpg" alt="Hero Background" />
           <div class="hero-text">
             <h1>Rhinoridge</h1>
             <p>
-              Lorem ipsum dolor sit amet et delectus accommodare his consul
-              copiosae legendos at vix ad putent delectus delicata usu. Vidit
-              dissentiet eos cu eum an brute copiosae hendrerit. Eos erant
-              dolorum an. Per facer affert ut.
+              Rynoridge is your trusted partner for authentic winter adventures, where the spirit of the outdoors meets exceptional equipment. Our skis and snowboards are expertly crafted for those who chase the thrill of winter, designed to perform as hard as you do. We believe in gear that empowers you to explore untouched powder and conquer challenging terrain, while minimizing our impact with thoughtful design and sustainable practices. Rynoridge is your gateway to the mountains, where performance, style, and responsibility converge.
             </p>
             <div class="hero-buttons">
-              <button class="store-button">Placeholder</button>
-              <button class="action-button">Button</button>
+              <button class="store-button">Shop</button>
+              <button class="action-button">Learn More</button>
             </div>
           </div>
         </section>
         <section class="features">
-          <h2>Tagline</h2>
+          <h2>Explore</h2>
           <div class="feature-cards">
             <div class="feature-card">
-              <img src="images/feature1.png" alt="Feature 1" />
-              <h3>Medium length headline</h3>
-              <p>
-                Lorem ipsum dolor sit amet et delectus accommodare his consul
-                copiosae.
+              <img src="images/skiing-snowboarding-knee-injuries.jpg" alt="Feature 1" />
+              <h3></h3>
+              <p class="short-text">
+                Rynoridge skis are engineered for the discerning skier, those who seek a blend of precision, power, and versatility on the mountain. We offer a diverse range of skis, from nimble carving skis designed for pristine groomers to robust all-mountain skis that conquer varied terrain, and floaty powder skis that excel in deep snow. Each pair is meticulously crafted with advanced construction techniques and premium materials, ensuring optimal performance and durability. We prioritize responsiveness and stability, allowing skiers to confidently tackle any slope, from steep descents to tight turns. Our designs embody a modern aesthetic, with eye-catching graphics that reflect the spirit of adventure. While performance remains paramount, we also integrate sustainable practices, subtly incorporating recycled materials where possible, demonstrating our commitment to responsible manufacturing. Rynoridge skis are built to elevate your skiing experience, empowering you to explore the mountains with confidence and style.
               </p>
-              <a href="#">Read more</a>
+              <a href="#" class="read-more">Read more</a>
             </div>
             <div class="feature-card">
-              <img src="images/feature2.png" alt="Feature 2" />
+              <img src="images/102-les-2-alpes-automne-hiver-snowpark-640x640.jpg" alt="Feature 2" />
               <h3>Medium length headline</h3>
-              <p>
-                Lorem ipsum dolor sit amet et delectus accommodare his consul
-                copiosae.
+              <p class="short-text">
+                Rynoridge fuels your passion for the mountains with expertly crafted skis and snowboards, built for those who chase the thrill of winter. We believe in gear that performs as hard as you do, empowering you to explore untouched powder and conquer challenging terrain. While performance is paramount, we also strive to minimize our impact with thoughtful design and sustainable practices, including the use of recycled materials. Rynoridge is your trusted partner for authentic winter adventures, where the spirit of the outdoors meets exceptional equipment. Whether you’re carving up the slopes or seeking fresh lines in the backcountry, Rynoridge has you covered.
               </p>
-              <a href="#">Read more</a>
+              <a href="#" class="read-more">Read more</a>
             </div>
             <div class="feature-card">
-              <img src="images/feature3.png" alt="Feature 3" />
-              <h3>Medium length headline</h3>
-              <p>
-                Lorem ipsum dolor sit amet et delectus accommodare his consul
-                copiosae.
+              <img src="images/snowboard-shaping.avif" alt="Feature 3" />
+              <h3>Quality snowboards</h3>
+              <p class="short-text">
+                Rynoridge snowboards are crafted for riders who demand performance and style in every turn. We build boards that cater to a variety of riding styles, from agile freestyle decks designed for park mastery to powerful freeride boards that excel in deep powder and challenging backcountry conditions. Each board is meticulously engineered with premium materials, focusing on responsiveness, durability, and a smooth, intuitive feel. We incorporate innovative designs that blend eye-catching aesthetics with functional features, ensuring riders not only perform at their best but also express their individuality on the slopes. While pushing the boundaries of performance, we also explore sustainable practices, subtly integrating recycled materials into select models, reflecting our commitment to both the rider and the environment. Rynoridge snowboards are built to elevate your riding experience, empowering you to explore the mountains with confidence and style.
               </p>
-              <a href="#">Read more</a>
+              <a href="#" class="read-more">Read more</a>
             </div>
           </div>
         </section>
@@ -78,14 +72,14 @@
           </div>
           <div id="social">
             <a href="https://facebook.com" target="_blank">
-              <img src="images\20673.png" alt="Facebook" />
+              <img src="images/20673.png" alt="Facebook" />
             </a>
             <a href="https://twitter.com" target="_blank">
-              <img src="images\twitter-x-icon-png.png" alt="Twitter" />
+              <img src="images/twitter-x-icon-png.png" alt="Twitter" />
             </a>
             <a href="https://instagram.com" target="_blank">
               <img
-                src="images\instagram-circle-icon-size_256.png"
+                src="images/instagram-circle-icon-size_256.png"
                 alt="Instagram"
               />
             </a>
@@ -93,5 +87,15 @@
         </div>
       </footer>
     </div>
+    <script>
+      document.querySelectorAll('.read-more').forEach(button => {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          const paragraph = this.previousElementSibling;
+          paragraph.classList.toggle('expanded');
+          this.textContent = paragraph.classList.contains('expanded') ? 'Read less' : 'Read more';
+        });
+      });
+    </script>
   </body>
 </html>

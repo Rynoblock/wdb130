@@ -65,6 +65,10 @@ header {
   width: 200px;
   margin: 0;
   display: block;
+  transition: .5s;
+}
+#logo img:hover {
+  transform: scale(1.1);
 }
 
 #nav {
@@ -78,11 +82,11 @@ header {
   text-align: center;
   color: var(--nav-link-color);
   text-decoration: none;
-  font-size: 28px;
+  font-size: 40px;
   padding-left: 5%;
   padding-right: 5%;
   font-family: var(--heading-font);
-  font-weight: 700;
+  font-weight: 300; /* Further reduced font weight */
   transition: color 0.5s;
 }
 
@@ -92,20 +96,35 @@ header {
 }
 
 .hero {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+  height: 100vh;
+  color: var(--headline-color-on-color);
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .hero-text {
   max-width: 800px;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background for better text readability */
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .hero-text h1 {
   font-size: 2.5em;
-  font-weight: 700;
+  font-weight: 300; /* Further reduced font weight */
   font-family: var(--heading-font);
 }
 
@@ -128,15 +147,16 @@ header {
   font-size: 1em;
   font-weight: 700;
   border: 2px solid black;
-  background-color: white;
+  background-color: #eaf0ce;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  border-radius: 20px;
 }
 
 .store-button:hover,
 .action-button:hover {
   background-color: black;
-  color: white;
+  color: #eaf0ce;
 }
 
 .features {
@@ -146,7 +166,7 @@ header {
 
 .features h2 {
   font-size: 1.8em;
-  font-weight: 700;
+  font-weight: 300; /* Further reduced font weight */
   font-family: var(--heading-font);
 }
 
@@ -179,7 +199,7 @@ header {
 
 .feature-card h3 {
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 300; /* Further reduced font weight */
   margin: 10px 0;
   font-family: var(--heading-font);
 }
@@ -188,16 +208,27 @@ header {
   font-size: 1.2em;
   margin: 10px 0;
   font-family: var(--paragraph-font);
+  overflow: hidden;
+  max-height: 3.6em; /* Adjust based on the number of lines you want to show */
+  text-overflow: ellipsis;
+  transition: max-height 0.5s ease;
 }
 
-.feature-card a {
+.feature-card p.expanded {
+  max-height: none;
+}
+
+.read-more {
+  display: block;
+  margin-top: 10px;
   font-size: 1em;
-  color: #000;
+  color: var(--accent1-color);
   text-decoration: none;
   font-weight: 700;
+  cursor: pointer;
 }
 
-.feature-card a:hover {
+.read-more:hover {
   text-decoration: underline;
 }
 
