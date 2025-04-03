@@ -3,89 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rynoridge Home</title>
+    <title>Rynoridge Store</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <p>Sign up for our newsletter for 10% off!</p>
   </head>
   <body>
     <div id="content">
       <header>
         <div id="logo">
-          <img class="logo" src="images\Rhino logo.png" alt="Rynoridge Logo" />
+          <img class="logo" src="images/Rhinologo.png" alt="Rynoridge Logo" />
         </div>
-        <div id="nav">
-          <a href="index.html">Link one</a>
-          <a href="page2.html">Link two</a>
-          <a href="site-plan.html">Link three</a>
-          <a href="contactus.html">Link four</a>
-        </div>
+        <nav id="nav">
+          <a href="home.html">Home</a>
+          <a href="page3.html">Gallery</a>
+          <a href="page4.html">Blog</a>
+          <a href="contactus.html">Contact Us</a>
+        </nav>
       </header>
       <main>
         <section class="hero">
-          <div class="hero-text">
-            <h1>Rhinoridge</h1>
-            <p>
-              Lorem ipsum dolor sit amet et delectus accommodare his consul
-              copiosae legendos at vix ad putent delectus delicata usu. Vidit
-              dissentiet eos cu eum an brute copiosae hendrerit. Eos erant
-              dolorum an. Per facer affert ut.
-            </p>
-            <div class="hero-buttons">
-              <button class="store-button">Placeholder</button>
-              <button class="action-button">Button</button>
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1>Rynoridge Store</h1>
+              <p>
+                Welcome to Rynoridge, your one-stop shop for all things snowboarding! We offer a wide range of high-quality snowboards, gear, and accessories to help you hit the slopes in style. Whether you're a beginner or an experienced rider, we have everything you need to make the most of your winter adventures. Explore our collection and find the perfect gear for your next ride!
+              </p>
+            </div>
+            <div class="hero-image">
+              <img
+                src="images\Wilderness_Whitetail_Limited_Edition_Skis-Product_Image.webp"
+                alt="Heroimage2"
+              />
             </div>
           </div>
         </section>
-        <section class="features">
-          <h2>Tagline</h2>
-          <div class="feature-cards">
-            <div class="feature-card">
-              <img src="images/feature1.png" alt="Feature 1" />
-              <h3>Medium length headline</h3>
-              <p>
-                Lorem ipsum dolor sit amet et delectus accommodare his consul
-                copiosae.
-              </p>
-              <a href="#">Read more</a>
+
+        <!-- New Row of Products -->
+        <section class="featured-products">
+          <h2>Top Picks</h2>
+          <div class="product-grid">
+            <div class="product-card">
+              <img src="images\atomic-bent-100-skis-2025-__89733.jpg" alt="Product 7" />
+              <h3>Atomic Bomber 3.0</h3>
+              <p>$595</p>
             </div>
-            <div class="feature-card">
-              <img src="images/feature2.png" alt="Feature 2" />
-              <h3>Medium length headline</h3>
-              <p>
-                Lorem ipsum dolor sit amet et delectus accommodare his consul
-                copiosae.
-              </p>
-              <a href="#">Read more</a>
+            <div class="product-card">
+              <img src="images\liberty-skis-2024-skis-liberty-skis-origin-101-2024-30148222615607.webp" alt="Product 8" />
+              <h3>In-Line Canvas Twigs</h3>
+              <p>$395-595</p>
             </div>
-            <div class="feature-card">
-              <img src="images/feature3.png" alt="Feature 3" />
-              <h3>Medium length headline</h3>
-              <p>
-                Lorem ipsum dolor sit amet et delectus accommodare his consul
-                copiosae.
-              </p>
-              <a href="#">Read more</a>
+            <div class="product-card">
+              <img src="images\700_251680_1097424.webp" alt="Product 9" />
+              <h3>Forest Two Classic</h3>
+              <p>$595</p>
             </div>
+          </div>
+        </section>
+
+        <!-- Existing Carousel -->
+        <section class="storefront">
+          <h2>Featured Products</h2>
+          <div class="carousel">
+            <button class="carousel-arrow left-arrow">&#8249;</button>
+            <div class="carousel-track-container">
+              <ul class="carousel-track">
+                <li class="carousel-item">
+                  <img src="images\Disruptor-Kyle-Mack-2025-top-and-base.webp" alt="Product 1" />
+                  <h3>Kitty Rocker</h3>
+                  <p>$649</p>
+                </li>
+                <li class="carousel-item">
+                  <img src="images\2024-2025-Lib-Tech-Jamie-Lynn-Snowboard.webp" alt="Product 2" />
+                  <h3>Dark Howler</h3>
+                  <p>$629</p>
+                </li>
+                <li class="carousel-item">
+                  <img src="images\LibTechSkunkApe__89423.webp" alt="Product 3" />
+                  <h3>MTN Collar v2</h3>
+                  <p>$799</p>
+                </li>
+                <li class="carousel-item">
+                  <img src="images\J.25.SNM.TTP.XX.webp" alt="Product 4" />
+                  <h3>MechBoard Artisinal Stomp</h3>
+                  <p>Sold Out</p>
+                </li>
+                <li class="carousel-item">
+                  <img src="images\Wilderness_Whitetail_Limited_Edition_Skis-Product_Image.webp" alt="Product 5" />
+                  <h3>Phat Buck Skis</h3>
+                  <p>$695</p>
+                </li>
+                <li class="carousel-item">
+                  <img src="images\RD240281001.webp" alt="Product 6" />
+                  <h3>Snow n' Cross Bones</h3>
+                  <p>$475</p>
+                </li>
+              </ul>
+            </div>
+            <button class="carousel-arrow right-arrow">&#8250;</button>
           </div>
         </section>
       </main>
       <footer>
         <div id="footer">
           <div id="footertext">
-            <p>Rynoridge &copy; 2025 - Your Company Name</p>
+            <p>Rynoridge &copy; 2025</p>
             <p><a href="site-plan.html">Site Plan</a></p>
             <p><a href="contactus.html">Contact Us</a></p>
           </div>
           <div id="social">
             <a href="https://facebook.com" target="_blank">
-              <img src="images\20673.png" alt="Facebook" />
+              <img src="images/20673.png" alt="Facebook" />
             </a>
             <a href="https://twitter.com" target="_blank">
-              <img src="images\twitter-x-icon-png.png" alt="Twitter" />
+              <img src="images/twitter-x-icon-png.png" alt="Twitter" />
             </a>
             <a href="https://instagram.com" target="_blank">
               <img
-                src="images\instagram-circle-icon-size_256.png"
+                src="images/instagram-circle-icon-size_256.png"
                 alt="Instagram"
               />
             </a>
@@ -93,5 +126,6 @@
         </div>
       </footer>
     </div>
+    <script src="scripts/carousel.js"></script>
   </body>
 </html>
